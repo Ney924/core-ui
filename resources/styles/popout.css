@@ -11,6 +11,15 @@
     cursor: pointer;
 }
 
+.toolbar-btn .popout__action {
+    display: flex;
+}
+
+.toolbar-btn .popout__action .anchor{
+    font-size: 20px;
+    margin-left: 5px;
+}
+
 .popout__action.open .anchor{
     transform: rotate(180deg);
 }
@@ -43,7 +52,8 @@
     cursor: pointer;
     transition: background .3s ease-in-out, color .3s ease-in-out;
 }
-.popout-menu__i:hover {
+.popout-menu__i:hover,
+.popout-menu__i_selected {
     background: var(--theme-colors__main);
 }
 .popout-menu__txt {
@@ -55,6 +65,7 @@
     color: var(--theme-colors__text);
     text-decoration: none;
 }
+
 .popout-menu__subtext {
     color: var(--theme-colors__main_strong);
 }
